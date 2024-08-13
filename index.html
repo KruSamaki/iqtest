@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Digit Code Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        img{
+            width: 98%;
+            align-items: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Crack the 3-Digit Code!</h1>
+        <div id="gameArea">
+            <div id="clue">
+                <p id="clueText"></p>
+            </div>
+            <div id="lock">
+                <img id="lockImage" src="https://via.placeholder.com/150?text=Lock" alt="Lock">
+            </div>
+            <div id="inputArea">
+                <input type="number" id="digit1" maxlength="1" min="0" max="9">
+                <input type="number" id="digit2" maxlength="1" min="0" max="9">
+                <input type="number" id="digit3" maxlength="1" min="0" max="9">
+            </div>
+            <button onclick="checkCode()">Unlock</button>
+        </div>
+        <p id="message"></p>
+        <p id="attempts">Attempts left: 3</p>
+        <p id="hint"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
